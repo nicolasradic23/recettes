@@ -28,8 +28,15 @@ jobs:
     # conteneurs Docker, on doit utiliser un runner Linux/Ubuntu.
     runs-on: ubuntu-latest
 
-    # On utilise ici le conteneur Docker fourni par Sonny
-    container: docker://gitlab-registry.in2p3.fr/sonny.lion/astro-chef:1.0.0
+    # On utilise ici le générateur de site statique fourni par Sonny via un
+    # conteneur Docker...
+    container: docker://gitlab-registry.in2p3.fr/sonny.lion/astro-chef:1.1.1
+    env:
+      # ...avec une configuration adaptée pour GitHub Pages qui utilise des
+      # URL du style https://hadrieng2.github.io/recettes/ et pas
+      # https://recettes-abcdef.github.io/ comme le fait GitLab dans sa
+      # configuration par défaut, ce qui casse les chemins de fichiers absolus.
+      BASE_URL: "/recettes"
 
     # Les étapes indiquent les actions à effectuer, sous forme de séquence
     steps:
