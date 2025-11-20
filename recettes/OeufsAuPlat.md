@@ -15,7 +15,7 @@ tags:
   - rapide
 image: null
 ingredients:
-  - "1 oeuf"
+  - "2 œufs voire 3 pour les gourmands"
   - "une noisette de beurre"
   - "1 pincée de sel"
 ustensiles:
