@@ -15,7 +15,7 @@ tags:
   - rapide
 image: null
 ingredients:
-  - "1 oeuf"
+  - "2 œufs"
   - "une noisette de beurre"
   - "1 pincée de sel"
 ustensiles:
