@@ -8,7 +8,7 @@ temps_de_cuisson: "4 min"
 temps_de_repos: ""
 difficulté: "Facile"
 portions: 1 personne
-catégorie: ""
+catégorie: "petit-déj"
 favori: true
 coût: "€"
 tags:
